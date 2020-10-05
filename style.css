@@ -9,12 +9,14 @@
 nav
 {
     position: fixed;
+    top: 0;
+    left: 0;
     height: 80px;
     width: 100%;
     background: black;
     box-shadow: 1px 1px 15px silver;
     z-index: 1;
-
+    transition: 0.5s;
 }
 
 nav label
@@ -54,7 +56,7 @@ nav ul li a
     font-family: 'Lucida Bright';
 }
 
-nav ul li.Active a
+nav ul li.Active a, nav ul li:hover a
 {
     color: tomato;
     box-shadow: inset 0 0 5px #ff0000,

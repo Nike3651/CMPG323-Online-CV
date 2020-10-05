@@ -43,6 +43,25 @@
         </div> 
         
         <script>
+           let navbar = document.querySelector('nav');
+           let scrollPrevious = window.pageYOffset;
+           window.onscroll = function()
+           {
+               let scrollCurrent = window.pageYOffset;
+               if(scrollPrevious > scrollCurrent)
+               {
+                    navbar.style.top = "0px";
+               }
+               else
+               {
+                    navbar.style.top = "-90px";
+               }
+               scrollPrevious = scrollCurrent
+           }
+        </script>
+
+
+        <script>
             $('nav ul li').click(function()
             {
                 $(this).addClass("Active").siblings().removeClass("Active");
