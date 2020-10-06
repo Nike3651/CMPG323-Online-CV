@@ -8,13 +8,17 @@
 
 body
 {
-    background-image: url('Wallpaper 5.jpg');
     
 }
 
 .Inner_Container
 {
     padding-top: 20px;
+    background-image: url('Wallpaper 1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 93vh;
 }
 
 .AMTitle
@@ -23,6 +27,11 @@ body
     color: rgb(225, 0, 0);
     padding: 1rem;
     position: relative;
+}
+
+.AMTitle h1
+{
+    font-size: 50px;
 }
 
 .AMTitle:after
@@ -127,6 +136,270 @@ body
     {
         grid-template-columns: 1fr;
     }
+}
+
+.Second_Container
+{
+    padding-top: 2px;
+    background-image: url('Wallpaper 3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 115vh;
+    transition: 0.5s;
+}
+
+.PETitle
+{
+    text-align: center;
+    color: rgb(225, 0, 0);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.PETitle h2, .ExtraTitle h2
+{
+    font-size: 40px;
+}
+
+.PETitle:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+    border-radius: 2px;
+}
+
+.Language_Container
+{
+    float: left;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.SkillLevel
+{
+    float: center;
+    width: 100%;
+    border-radius: 55px;
+    background-color: rgb(92, 91, 91);
+}
+
+.Skill
+{
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white; 
+}
+
+@keyframes JavaSlider
+{
+    from{width: 0%;}
+    to{width: 95%;}
+}
+
+@keyframes CPPSlider
+{
+    from{width: 0%;}
+    to{width: 80%;}
+}
+
+@keyframes CSharpSlider
+{
+    from{width: 0%;}
+    to{width: 75%;}
+}
+
+@keyframes PythonSlider
+{
+    from{width: 0%;}
+    to{width: 95%;}
+}
+
+.Java 
+{
+    width: 95%; 
+    background-color: white; 
+    animation-name: JavaSlider;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    font-family: 'Lucida Sans';
+    font-weight: 700;
+} 
+.CPP 
+{
+    width: 80%; 
+    background-color: rgb(175, 0, 0); 
+    animation-name: CPPSlider;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    font-family: 'Lucida Sans';
+    font-weight: 700;
+} 
+.CSharp
+{
+    width: 75%; 
+    background-color: black; 
+    animation-name: CSharpSlider;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    font-family: 'Lucida Sans';
+    font-weight: 700;
+}  
+.Python 
+{
+    width: 95%; 
+    background-color: #004594; 
+    animation-name: PythonSlider;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    font-family: 'Lucida Sans';
+    font-weight: 700;
+} 
+
+
+
+.ExtraTitle
+{
+    text-align: center;
+    color: rgb(225, 0, 0);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.ExtraTitle:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+    border-radius: 2px;
+}
+
+.Other_Container
+{
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.OtherSkillLevel
+{
+    float: center;
+    width: 100%;
+    border-radius: 55px;
+    background-color: rgb(92, 91, 91);
+}
+
+.Skill
+{
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: rgb(0, 156, 117); 
+}
+
+@keyframes HTMLSlider
+{
+    from{width: 0%;}
+    to{width: 87%;}
+}
+
+@keyframes CSSSlider
+{
+    from{width: 0%;}
+    to{width: 95%;}
+}
+
+@keyframes JavaScriptSlider
+{
+    from{width: 0%;}
+    to{width: 80%;}
+}
+
+
+.HTML 
+{
+    width: 87%; 
+    background-color: white; 
+    animation-name: HTMLSlider;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    font-family: 'Lucida Sans';
+    font-weight: 700;
+} 
+.CSS 
+{
+    width: 95%; 
+    background-color: rgb(175, 0, 0); 
+    animation-name: CSSSlider;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    font-family: 'Lucida Sans';
+    font-weight: 700;
+} 
+.JavaScript
+{
+    width: 80%; 
+    background-color: black; 
+    animation-name: JavaScriptSlider;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    font-family: 'Lucida Sans';
+    font-weight: 700;
+} 
+
+.Language_Container h4, .Other_Container h4
+{
+    color:#2ecc71;
+    font-size: 30px;
+}
+
+.ContactMe_Container
+{
+    padding-top: 10px;
+    background-image: url('Wallpaper 6.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.ContactMe_Container div
+{
+    float: right;
+    margin-right: 7.5%;
+}
+
+.ContactMe_Container h5
+{
+    font-size: 40px;
+    color: red;
 }
 
 
