@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Nicholas Dippenaar CV</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
 
-    <body style="background-image: url('Background Image.jpg');">
-        <nav>
-            <Label>Nicholas Dippenaar CV</Label>
-            <ul>
-                <li class="Active"><a href="#">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#progex">Programming Experience</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-        <div class="content">
-            <h1 id="about">About Me</h1>
-            <p>All the traits</p>
-            <p>that best describe me</p>
-        
-            <div class="Progex">
-                <h2 id="progex">Programming Experience</h2>
-                <p>List of languages that I know and how well it can be utilized for example:</p>
-                <ul>
-                    <li>Java</li>
-                    <li>C#/C++</li>
-                    <li>Python</li>
-                </ul>
-                <p>List of other experience that I know and how well it can be utilized for example:</p>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                </ul>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Nicholas Dippenaar's CV   </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Programming Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Me</a>
+                  </li>
+              </ul>
             </div>
-            
-            
-            <center>"Like what you see? Email me: nicholasdippenaar@yahoo.com"</center>
-            
-            <h3 id="contact">Contact Me</h3>
-            <p>This is where I will provide a way for the employer to contact me</p>           
-        </div> 
+          </nav>  
         
-        <script>
-           let navbar = document.querySelector('nav');
-           let scrollPrevious = window.pageYOffset;
-           window.onscroll = function()
-           {
-               let scrollCurrent = window.pageYOffset;
-               if(scrollPrevious > scrollCurrent)
-               {
-                    navbar.style.top = "0px";
-               }
-               else
-               {
-                    navbar.style.top = "-90px";
-               }
-               scrollPrevious = scrollCurrent
-           }
-        </script>
+        
+        
+        <div class="Inner_Container">
+            <div class="AMTitle">
+                <h1>About Me</h1>
+            </div>
+            <div class="Trait_Container">
+                    <div class="Traits">
+                        <div class="TraitTitle">
+                            <h3>Hardworking</h3>
+                        </div>
+                        <p>I am very dedicated and passionate about coding and learning new things.</p>
+                    </div>
+                    <div class="Traits">
+                        <div class="TraitTitle">
+                            <h3>Creative</h3>
+                        </div>
+                        <p>I love finding new and interesting ways to apporach problem solving and strive to create something unique.</p>
+                    </div>
+                    <div class="Traits">
+                        <div class="TraitTitle">
+                            <h3>Collaborative</h3>
+                        </div>
+                        <p>I enjoy working on group projects and I am very open-minded to other group member's opinions.</p>
+                    </div>
+                    <div class="Traits">
+                        <div class="TraitTitle">
+                            <h3>Enthusistic</h3>
+                        </div>
+                        <p>I have an exceptional interest in programming and thus I am always eager to start with a project.</p>
+                    </div>
+                </div>
 
-
-        <script>
-            $('nav ul li').click(function()
-            {
-                $(this).addClass("Active").siblings().removeClass("Active");
-            });
-        </script>
+            </div>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     </body>
+</html>

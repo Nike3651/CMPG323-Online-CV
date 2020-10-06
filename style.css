@@ -6,113 +6,129 @@
     font-family: 'Oceanic Drift';
 }
 
-nav
+body
 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 80px;
-    width: 100%;
-    background: black;
-    box-shadow: 1px 1px 15px silver;
-    z-index: 1;
-    transition: 0.5s;
+    background-image: url('Wallpaper 5.jpg');
+    
 }
 
-nav label
+.Inner_Container
 {
-    font-size: 50px;
-    padding: 0 80px;
-    line-height: 80px;
-    letter-spacing: -1px;
-    color: white;
-    user-select: none;
+    padding-top: 20px;
 }
 
-nav ul
+.AMTitle
 {
-    list-style: none;
+    text-align: center;
+    color: rgb(225, 0, 0);
+    padding: 1rem;
+    position: relative;
+}
+
+.AMTitle:after
+{
+    content: '';
     position: absolute;
-    right: 0;
-    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #2ecc71;
+    border-radius: 2px;
+}
+
+.Trait_Container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.Traits
+{
+    padding: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.Traits p 
+{
+    font-size: 25px;
+    font-family: 'Lucida Sans';
+}
+
+.Traits:hover > .TraitTitle:after, .Traits:hover > .TraitTitle:before
+{
+    width: 35px;
+}
+
+.TraitTitle
+{
     display: flex;
-    margin-right: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
 }
 
-nav ul li
+.TraitTitle h3
 {
-    margin: 0 5px;
+    color: rgb(225, 0, 0);
+    font-size: 35px;
+    margin: 30px;
+    font-style: oblique;
 }
 
-nav ul li a
+.TraitTitle:after
 {
-    color: grey;
-    padding: 10px 20px;
-    background: rgb(255, 255, 255);
-    border-radius: 5px;
-    border: 1px solid transparent;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Lucida Bright';
-}
-
-nav ul li.Active a, nav ul li:hover a
-{
-    color: tomato;
-    box-shadow: inset 0 0 5px #ff0000,
-                inset 0 0 10px #ff0000e1,
-                inset 0 0 15px #ff000036 ;
-}
-
-.content
-{
+    content: '';
     position: absolute;
-    top: 100px;
-    padding: 0 80px; 
+    bottom: 0;
+    right: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2ecc71;
+    transition: 0.4s;
 }
 
-.content h1
+.TraitTitle:before
 {
-    font-size: 55px;
-    font-family: 'Oceanic Drift';
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #2ecc71;
+    transition: 0.4s;
 }
 
-.content p
+@media screen and (max-width: 1200px)
 {
-    font-size: 18px;
-    padding: 10px 0;
-    text-align: justify;
-    font-family: 'Lucida Sans';
+    .Trait_Container
+    {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
 }
 
-.content h2
+@media screen and (max-width: 650px)
 {
-    font-size: 55px;
+    .Trait_Container
+    {
+        grid-template-columns: 1fr;
+    }
 }
 
-.content ul
-{
-    padding: 0 0 10px 30px;
 
-}
-
-.content ul li
-{
-    font-size: 20px;
-    font-family: 'Lucida Sans';
-}
-
-.content h3
-{
-    font-size: 55px;
-}
-
-center
-{
-    color: red;
-    font-size: 22px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 
 
