@@ -414,7 +414,7 @@ body
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 55vh;
+    height: 60vh;
     width: 100%;
     transition: 0.5s;
 }
@@ -443,16 +443,17 @@ body
 
 .EmailDetail a
 {
-    margin-left: 27%;
+    margin-left: 30%;
 }
 
 .EmailDetail h5
 {
     font-size: 35px;
     color: rgb(215, 0, 0);
-    margin-left: 15%;
+    margin-left: 20%;
     margin-bottom: 20px;
     font-family: 'Lucida Sans';
+    padding: 20px;
 }
 
 .SocialMediaContainer
@@ -460,10 +461,10 @@ body
     width: 100%;
     height: 15vh;
     margin-top: 25px;
-    margin-left: 33%;
+    margin-left: 38%;
 }
 
-@media screen and (max-width: 850px)
+@media screen and (max-width: 650px)
 {
     .SocialMediaContainer
     {
@@ -492,6 +493,7 @@ body
     .SocialMediaContainer
     {
         margin-left: 21px;
+        height: 0%;
     }
     .EmailDetail h5
     {
@@ -575,7 +577,7 @@ body
 
 .navbar
 {
-    height: 7vh;
+
     text-align: left;
     align-items: center;
     text-transform: uppercase;
@@ -664,7 +666,7 @@ body
         text-align: center;
         grid-gap: 1rem;
         padding: 1rem 80px;
-        margin-left: 10%;
+        margin-left: 1%;
     }
      
 }
@@ -677,7 +679,7 @@ body
     }
     .Games_Container
     {
-        padding-bottom: 1400px;
+        padding-bottom: 50px;
     } 
     .Game
     {
