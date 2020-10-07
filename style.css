@@ -374,24 +374,7 @@ body
     font-size: 30px;
 }
 
-@media screen and (max-width: 1200px)
-{
-    .Second_Container
-    {
-        padding-top: 25px;
-    }
-     
-}
-
-@media screen and (max-width: 1050px)
-{
-    .Second_Container
-    {
-        padding-top: 150px;
-    }
-}
-
-@media screen and (max-width: 915px)
+@media screen and (max-width: 1205px)
 {
     .Second_Container
     {
@@ -399,11 +382,19 @@ body
     }
 }
 
-@media screen and (max-width: 650px)
+@media screen and (max-width: 850px)
 {
     .Second_Container
     {
-        padding-top: 125px;
+        padding-top: 350px;
+    }
+}
+
+@media screen and (max-width: 775px)
+{
+    .Second_Container
+    {
+        padding-top: 400px;
     }
 }
 
@@ -461,6 +452,7 @@ body
     color: rgb(215, 0, 0);
     margin-left: 15%;
     margin-bottom: 20px;
+    font-family: 'Lucida Sans';
 }
 
 .SocialMediaContainer
@@ -475,14 +467,47 @@ body
 {
     .SocialMediaContainer
     {
-        margin-left: 0%;
+        margin-left: 50px;
+    }
+    .EmailDetail h5
+    {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    .EmailDetail a
+    {
+        font-size: 15px;
+        font-family: 'Lucida Sans';
+        margin-left: 15%;
+    }
+    .EmailDetail
+    {
+        width: 75%;
+        margin-left: 50px;
     }
 }
+
 @media screen and (max-width: 400px)
 {
     .SocialMediaContainer
     {
-        margin-left: -15%;
+        margin-left: 21px;
+    }
+    .EmailDetail h5
+    {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    .EmailDetail a
+    {
+        font-size: 15px;
+        font-family: 'Lucida Sans';
+        margin-left: 15%;
+    }
+    .EmailDetail
+    {
+        width: 75%;
+        margin-left: 50px;
     }
 }
 
@@ -571,7 +596,6 @@ body
 .API_Container
 {
     width: 100%;
-    height: 55vh;
     background-color: gainsboro;
     background-position: center;
     background-size: cover;
@@ -582,7 +606,6 @@ body
 {
     width: 100%;
     background-color: gainsboro;
-    height: 60vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -602,6 +625,7 @@ body
     padding: 0.5rem;
     margin-bottom: 0.5rem;
     position: relative;
+    border-radius: 35px;
 }
 
 .GameTitle h4:after
@@ -612,7 +636,7 @@ body
     right: 50%;
     width: 100px;
     height: 4px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 35px;
     background-color: #2ecc71;
     transition: 0.4s;
 }
@@ -620,8 +644,46 @@ body
 .Game
 {
     width: auto;
-    height: 55vh;
+    height: 40vh;
     background-color: rgb(92, 91, 91);
+    border-radius: 35px;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .Games_Container
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Game
+    {
+        border-radius: 35px;
+        width: 800px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-gap: 1rem;
+        padding: 1rem 80px;
+        margin-left: 10%;
+    }
+     
+}
+
+@media screen and (max-width: 650px)
+{
+    .Games_Container
+    {
+        grid-template-columns: 1fr;
+    }
+    .Games_Container
+    {
+        padding-bottom: 1400px;
+    } 
+    .Game
+    {
+        border-radius: 35px;
+        width: 300px;
+    }
 }
 
 
