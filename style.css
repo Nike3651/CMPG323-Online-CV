@@ -15,20 +15,22 @@ body
     justify-content: center;
 }
 
+/*First Section: About Me*/
+
 .Inner_Container
 {
     padding-top: 20px;
-    background-image: url('Wallpaper 1.jpg');
+    background-color: gainsboro;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 93vh;
+    height: 75vh;
 }
 
 .AMTitle
 {
     text-align: center;
-    color: rgb(225, 0, 0);
+    color: rgb(215, 0, 0);
     padding: 1rem;
     position: relative;
 }
@@ -66,19 +68,21 @@ body
 .Traits
 {
     padding: 1rem;
-    color: #ffffff;
+    color: black;
     cursor: pointer;
+    background-color: gray;
+    border-radius: 35px;
 }
 
 .Traits p 
 {
     font-size: 25px;
-    font-family: 'Lucida Sans';
+    font-family: 'Lucida Sans'; 
 }
 
-.Traits:hover > .TraitTitle:after, .Traits:hover > .TraitTitle:before
+.Traits:hover
 {
-    width: 35px;
+    background-color: rgb(0, 90, 126);
 }
 
 .TraitTitle
@@ -93,7 +97,7 @@ body
 
 .TraitTitle h3
 {
-    color: rgb(225, 0, 0);
+    color: rgb(215, 0, 0);
     font-size: 35px;
     margin: 30px;
     font-style: oblique;
@@ -125,6 +129,7 @@ body
     transition: 0.4s;
 }
 
+
 @media screen and (max-width: 1200px)
 {
     .Trait_Container
@@ -132,6 +137,7 @@ body
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
     }
+     
 }
 
 @media screen and (max-width: 650px)
@@ -140,56 +146,42 @@ body
     {
         grid-template-columns: 1fr;
     }
+    .Inner_Container
+    {
+        padding-bottom: 1400px;
+    } 
 }
+
+/*Second Section: Programming Experience*/
 
 .Second_Container
 {
     padding-top: 2px;
-    background-image: url('Wallpaper 3.jpg');
+    background-color: gainsboro;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 115vh;
     transition: 0.5s;
 }
 
-.PETitle
-{
-    text-align: center;
-    color: rgb(225, 0, 0);
-    margin-top: 2%;
-    margin-bottom: 2%;
-    position: relative;
-}
 
-.PETitle h2, .ExtraTitle h2
+.PETitle h2, .ExtraTitle h2, .ContactMe_Container h2
 {
     font-size: 40px;
-}
-
-.PETitle:after
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    height: 4px;
-    width: 100px;
-    background-color: #2ecc71;
-    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    color: rgb(215, 0, 0);
 }
 
 .Language_Container
 {
-    float: left;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
     grid-gap: 1rem;
-    padding: 1rem 80px;
+    padding: 30px;
     font-size: 1.2rem;
 }
 
@@ -246,7 +238,7 @@ body
 .CPP 
 {
     width: 80%; 
-    background-color: rgb(175, 0, 0); 
+    background-color: rgb(215, 0, 0); 
     animation-name: CPPSlider;
     animation-duration: 3s;
     animation-delay: 5s;
@@ -279,13 +271,13 @@ body
 .ExtraTitle
 {
     text-align: center;
-    color: rgb(225, 0, 0);
+    color: rgb(215, 0, 0);
     margin-top: 2%;
     margin-bottom: 2%;
     position: relative;
 }
 
-.ExtraTitle:after
+.ExtraTitle h2:after, .PETitle h2:after, .CMTitle h2:after, .StatsTitle h2:after
 {
     content: '';
     position: absolute;
@@ -300,13 +292,13 @@ body
 
 .Other_Container
 {
+    
     width: 100%;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
     grid-gap: 1rem;
-    padding: 1rem 80px;
     font-size: 1.2rem;
 }
 
@@ -382,47 +374,120 @@ body
     font-size: 30px;
 }
 
+@media screen and (max-width: 1200px)
+{
+    .Second_Container
+    {
+        padding-top: 25px;
+    }
+     
+}
+
+@media screen and (max-width: 1050px)
+{
+    .Second_Container
+    {
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 915px)
+{
+    .Second_Container
+    {
+        padding-top: 300px;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    .Second_Container
+    {
+        padding-top: 125px;
+    }
+}
+
+@media screen and (max-width: 470px)
+{
+    .Second_Container
+    {
+        padding-top: 300px;
+    }
+}
+
+/*Thrid Section: Contact Me*/
+
 .ContactMe_Container
 {
-    padding-top: 10px;
-    background-image: url('Wallpaper 6.jpg');
+    background-color: gainsboro;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 55vh;
     width: 100%;
     transition: 0.5s;
 }
 
+.ContactMe_Container a
+{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.CMTitle h2
+{
+    padding-top: 125px;
+}
+
 .EmailDetail
 {
-    float: right;
-    margin-right: 7.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    background-color: rgb(92, 91, 91);
+    border-radius: 35px;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.EmailDetail a
+{
+    margin-left: 27%;
 }
 
 .EmailDetail h5
 {
-    font-size: 40px;
-    color: rgb(175, 0, 0);
+    font-size: 35px;
+    color: rgb(215, 0, 0);
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+.SocialMediaContainer
+{
+    width: 100%;
+    margin-left: 32%;
+    height: 15vh;
+    margin-top: 25px;
 }
 
 .SocialMediaContainer ul
 {
-    display: flex;
+    display: inline-flex;
 }
 
 .SocialMediaContainer ul li
 {
     position: relative;
     display: block;
-    color: rgb(175, 0, 0);
+    color: rgb(215, 0, 0);
     font-size: 35px;
     height: 65px;
     width: 65px;
     background: #171515;
     line-height: 60px;
     border-radius: 30%;
-    margin: 0 40px;
+    margin: 25px 25px 0px;
     cursor: pointer;
     transition: .3s;
     text-align: center;
@@ -464,7 +529,39 @@ body
     box-shadow: 0 0 15px #cc02ff;
   }
 
-  
+
+  /*Navigation Bar*/
+
+.navbar
+{
+    height: 7vh;
+    text-align: left;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav-link
+{
+    margin-top: 1px;
+}
+
+.navbar ul li:hover
+{
+    transform: scale(1.1);
+}
+
+
+/*Stats API*/
+
+.API_Container
+{
+    width: 100%;
+    height: 55vh;
+    background-color: gainsboro;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 
 
