@@ -4,11 +4,13 @@
         <meta charset="UTF-8">
         <title>Nicholas Dippenaar CV</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="script.js"></script>
+        <script src="CoronaScript.js" ></script>
+        <script src="WeatherScript.js"></script>
     </head>
 
     <body>
@@ -151,24 +153,40 @@
 
         <div class="API_Container" id="Stats">
             <div class="StatsTitle">
-                <h2>My Gaming Statistics</h2>
+                <h2>My Statistics</h2>
             </div>
             <div class="Games_Container">
         
                 <div class="Game">
                     <div class="GameTitle">
-                        <h4>Apex Legends</h4>
-                            <div class="Statistics" id="ApexStats">
-                            
-                        </div>
+                        <h4>Covid Statistics</h4>
+                        <div class="Table-responsive">
+                            <table class = "table table-bordered">
+                                <thead>
+                                    <tr class="table-info">
+                                        <th scope="col">Total Active Cases Worldwide</th>
+                                        <th scope="col">Total Cases Worldwide</th>  
+                                    </tr> 
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                         </div>
                     </div>
                 </div>
                 <div class="Game">
                     <div class="GameTitle">
-                        <h4>Hyperscape</h4>
-                        <div class="Statistics">
-                            <p>Display stats about Hyperscape Here</p>
-                        </div>
+                        <h4>Weather Statistics</h4>
+                        <div class="Table-responsive">
+                            <table class = "table table-bordered">
+                                <thead>
+                                    <tr class="table-info">
+                                        <th scope="col">Minimum Temperature</th>
+                                        <th scope="col">Maximum Temperature</th>  
+                                    </tr> 
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                         </div>
                     </div>
                 </div>    
                 <div class="Game">
