@@ -686,11 +686,9 @@ body
         border-radius: 35px;
         width: 300px;
     }
+    .table
+    {
+        margin-right: 20px;
+    }
+    
 }
-
-.button
-{
-    padding-bottom: 15px;
-}
-
-

@@ -42,6 +42,3 @@ function CoronaFunction()
     }
     Corona.send();
 }
-
-
-
