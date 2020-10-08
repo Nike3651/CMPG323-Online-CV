@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="CoronaScript.js" ></script>
-        <script src="WeatherScript.js"></script>
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -160,12 +159,13 @@
                 <div class="Game">
                     <div class="GameTitle">
                         <h4>Covid Statistics</h4>
-                        <div class="Table-responsive">
-                            <table class = "table table-bordered">
+                        <button onclick="CoronaFunction()">Show Data</button>
+                        <div class="Covid19">  
+                            <table class= "table table-bordered" id="Corona">
                                 <thead>
                                     <tr class="table-info">
-                                        <th scope="col">Total Active Cases Worldwide</th>
-                                        <th scope="col">Total Cases Worldwide</th>  
+                                        <th>Total Active Cases Worldwide</th>
+                                        <th>Total Cases Worldwide</th>  
                                     </tr> 
                                 </thead>
                                 <tbody></tbody>
@@ -176,12 +176,12 @@
                 <div class="Game">
                     <div class="GameTitle">
                         <h4>Weather Statistics</h4>
-                        <div class="Table-responsive">
-                            <table class = "table table-bordered">
+                        <button onclick="WeatherFunction()">Show Data</button>
+                        <div class="Weather">
+                            <table class= "table table-bordered" id="Weather" onmouseover="WeatherFunction()">
                                 <thead>
                                     <tr class="table-info">
-                                        <th scope="col">Minimum Temperature</th>
-                                        <th scope="col">Maximum Temperature</th>  
+                                        <th>Current Temperature</th> 
                                     </tr> 
                                 </thead>
                                 <tbody></tbody>
@@ -189,14 +189,6 @@
                          </div>
                     </div>
                 </div>    
-                <div class="Game">
-                    <div class="GameTitle">
-                        <h4>Overwatch</h4>
-                        <div class="Statistics">
-                            <p>Display stats about Overwatch Here</p>
-                        </div>
-                    </div>
-                </div> 
             </div>      
         </div>
 

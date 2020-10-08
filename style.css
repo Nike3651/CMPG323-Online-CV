@@ -609,7 +609,7 @@ body
     width: 100%;
     background-color: gainsboro;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -688,5 +688,9 @@ body
     }
 }
 
+.button
+{
+    padding-bottom: 15px;
+}
 
 
